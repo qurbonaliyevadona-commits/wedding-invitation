@@ -1,0 +1,754 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navruza & Faxriddin</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- ==================================================
+     PRELOADER
+================================================== -->
+
+<div class="preloader" id="preloader">
+
+    <div class="envelope">
+        <div class="envelope-heart">♡</div>
+    </div>
+
+    <p>Bizning taklifnomamiz</p>
+
+    <button id="openInvitation">
+        Taklifnomani ochish
+        <span>→</span>
+    </button>
+
+</div>
+
+
+<!-- ==================================================
+     MUSIC
+================================================== -->
+
+<audio id="weddingMusic" loop></audio>
+
+<button class="music-btn" id="musicBtn">
+    ♪
+</button>
+
+
+<!-- ==================================================
+     NAVBAR
+================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Wedding <span>♡</span>
+    </div>
+
+    <nav id="navMenu">
+
+        <a href="#home">
+            Bosh sahifa
+        </a>
+
+        <a href="#story">
+            Bizning hikoyamiz
+        </a>
+
+        <a href="#gallery">
+            Galereya
+        </a>
+
+        <a href="#event">
+            Tadbir
+        </a>
+
+        <a href="#rsvp">
+            Taklifnoma
+        </a>
+
+    </nav>
+
+    <div class="nav-names">
+        ♡ Navruza & Faxriddin
+    </div>
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+    >
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <!-- PREMIUM CSS DEKORATSIYA -->
+    <div class="luxury-corner corner-tl"></div>
+    <div class="luxury-corner corner-tr"></div>
+    <div class="luxury-corner corner-bl"></div>
+    <div class="luxury-corner corner-br"></div>
+
+    <div class="luxury-heart">♡</div>
+
+    <div class="hero-content">
+
+        <p class="hero-top-text">
+            BIZNING BAXTLI KUNIMIZGA
+        </p>
+
+        <p class="hero-invite">
+            Sizni taklif qilamiz
+        </p>
+
+        <div class="hero-names">
+
+            <h1>Navruza</h1>
+
+            <div class="names-divider">
+                <span></span>
+                <b>&</b>
+                <span></span>
+            </div>
+
+            <h1>Faxriddin</h1>
+
+        </div>
+
+        <p class="hero-description">
+            Hayotimizning eng go‘zal kunida
+            <br>
+            biz bilan birga bo‘lishingizni istaymiz.
+        </p>
+
+        <div class="hero-date">
+            <span>21</span>
+            <i>•</i>
+            <span>09</span>
+            <i>•</i>
+            <span>2026</span>
+        </div>
+
+        <div class="hero-location">
+            <span>♡</span>
+            <p>To‘yimizga marhamat!</p>
+        </div>
+
+        <div class="countdown">
+
+            <div class="time-box">
+                <strong id="days">00</strong>
+                <span>kun</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="hours">00</strong>
+                <span>soat</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="minutes">00</strong>
+                <span>daqiqa</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="seconds">00</strong>
+                <span>soniya</span>
+            </div>
+
+        </div>
+
+        <a href="#event" class="hero-button">
+            <span>♡</span>
+            Taklifnomani ko‘rish
+            <b>→</b>
+        </a>
+
+    </div>
+
+    <div class="hero-bottom">
+        <span></span>
+        <p>21 SENTABR 2026</p>
+        <span></span>
+    </div>
+
+</section>
+<!-- ==================================================
+     STORY
+================================================== -->
+
+<section
+    class="story section"
+    id="story"
+>
+
+    <div class="story-container">
+
+
+        <!-- STORY TEXT -->
+
+        <div class="story-text">
+
+            <div class="section-title">
+
+                <span>
+                    Bizning hikoyamiz
+                </span>
+
+                <div>
+
+                    <i></i>
+
+                    ♡
+
+                    <i></i>
+
+                </div>
+
+            </div>
+
+
+            <p>
+
+                Biz bir-birimizni tanishgan
+                kunlarimizdan boshlab,
+                hayotimiz yanada go'zal
+                bo'la boshladi.
+
+            </p>
+
+
+            <p>
+
+                Endi esa, bu yo'lda eng muhim
+                qadamni tashlashga tayyormiz.
+                Sizni bizning baxtimizga
+                sherik bo'lishingizni istaymiz.
+
+            </p>
+
+
+            <div class="signature">
+
+                Navruza
+                <span>&</span>
+                Faxriddin
+                ♡
+
+            </div>
+
+        </div>
+
+
+        <!-- STORY IMAGE -->
+
+        <div class="story-card">
+
+            <img
+                src="{% static 'images/photo1.png' %}"
+                alt="Wedding"
+                class="story-photo"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     EVENT
+================================================== -->
+<!-- ================= EVENT ================= -->
+
+<section class="event-section section" id="event">
+
+    <div class="event-container">
+
+        <p class="event-small-title">
+            BIZNING MAXSUS KUNIMIZ
+        </p>
+
+        <h2 class="event-title">
+            To‘yimizga<br>
+            <span>marhamat!</span>
+        </h2>
+
+        <div class="event-line">
+            <span></span>
+            <b>♡</b>
+            <span></span>
+        </div>
+
+
+        <div class="event-cards">
+
+            <!-- SANA -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ♡
+                </div>
+
+                <p class="event-label">
+                    SANA
+                </p>
+
+                <h3>
+                    21
+                </h3>
+
+                <p>
+                    SENTYABR
+                    <br>
+                    2026
+                </p>
+
+            </div>
+
+
+            <!-- VAQT -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ♢
+                </div>
+
+                <p class="event-label">
+                    VAQT
+                </p>
+
+                <h3>
+                    18:00
+                </h3>
+
+                <p>
+                    TO‘Y
+                    <br>
+                    BOSHLANISHI
+                </p>
+
+            </div>
+
+
+            <!-- MANZIL -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ⌖
+                </div>
+
+                <p class="event-label">
+                    MANZIL
+                </p>
+
+                <h3>
+                    Angren Land
+                </h3>
+
+                <p>
+                    TO‘YXONA
+                    <br>
+                    ANGREN Land
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- XARITA -->
+
+        <div class="event-map">
+
+            <div class="map-content">
+
+                <span class="map-icon">
+                    ⌖
+                </span>
+
+                <h3>
+                    Angren Land
+                </h3>
+
+                <p>
+                    To‘yimiz bo‘lib o‘tadigan manzil
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Angren+Land"
+                    target="_blank"
+                    class="map-button"
+                >
+                    Xaritada ko‘rish
+                    <b>→</b>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==================================================
+     GALLERY
+================================================== -->
+
+<section
+    class="gallery section"
+    id="gallery"
+>
+
+    <div class="section-title center">
+
+        <span>
+            Galereya
+        </span>
+
+        <div>
+
+            <i></i>
+
+            ♡
+
+            <i></i>
+
+        </div>
+
+    </div>
+
+
+    <div class="gallery-wrapper">
+
+
+        <!-- PREVIOUS -->
+
+        <button
+            class="gallery-arrow"
+            id="prev"
+            type="button"
+        >
+            ←
+        </button>
+
+
+        <!-- PHOTOS -->
+
+        <div
+            class="gallery-track"
+            id="galleryTrack"
+        >
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="{% static 'images/photo1.png' %}"
+                    alt="Wedding photo 1"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="{% static 'images/photo2.png' %}"
+                    alt="Wedding photo 2"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="{% static 'images/photo3.png' %}"
+                    alt="Wedding photo 3"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="{% static 'images/photo4.png' %}"
+                    alt="Wedding photo 4"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="{% static 'images/photo5.png' %}"
+                    alt="Wedding photo 5"
+                >
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NEXT -->
+
+        <button
+            class="gallery-arrow"
+            id="next"
+            type="button"
+        >
+            →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     RSVP
+================================================== -->
+
+<section
+    class="rsvp section"
+    id="rsvp"
+>
+
+    <div class="rsvp-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="rsvp-side">
+
+            <p>
+
+                Sizning kelishingiz<br>
+                biz uchun juda<br>
+                qadrli! ♡
+
+            </p>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="rsvp-form">
+
+
+            <div class="section-title center">
+
+                <span>
+                    Taklifnoma
+                </span>
+
+                <div>
+
+                    <i></i>
+
+                    ♡
+
+                    <i></i>
+
+                </div>
+
+            </div>
+
+
+            <p class="rsvp-subtitle">
+
+                Iltimos, tashrifingizni tasdiqlang
+
+            </p>
+
+
+            <form id="rsvpForm">
+
+
+                <!-- NAME + PHONE -->
+
+                <div class="form-row">
+
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Ismingiz *"
+                        required
+                    >
+
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Telefon raqamingiz *"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ATTENDANCE -->
+
+                <div class="radio-group">
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="yes"
+                            checked
+                        >
+
+                        <span></span>
+
+                        Kelaman
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="no"
+                        >
+
+                        <span></span>
+
+                        Kela olmayman
+
+                    </label>
+
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+
+                    ♡
+
+                    Yuborish
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+
+    <div class="footer-left">
+
+        Biz birga... ♡
+
+    </div>
+
+
+    <div class="footer-center">
+
+        <h2>
+
+            Navruza
+
+            <span>
+                ♡
+            </span>
+
+            Faxriddin
+
+        </h2>
+
+
+        <p>
+            21.09.2026
+        </p>
+
+    </div>
+
+
+    <div class="footer-right">
+
+        ♡ &nbsp;
+        ♡ &nbsp;
+        ♡
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     TOAST
+================================================== -->
+
+<div
+    class="toast"
+    id="toast"
+>
+
+    Tashrifingiz uchun rahmat! ♡
+
+</div>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

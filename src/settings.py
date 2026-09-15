@@ -25,7 +25,15 @@ SECRET_KEY = 'django-insecure-ip-@+4ds4$7^(-h!b+i+xaw&kg$wo^b9fmfr7%&+yk9wiv!$a*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "wedding-invitation-qz9j.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://wedding-invitation-qz9j.onrender.com",
+]
 
 
 # Application definition
